@@ -12,7 +12,6 @@ public class Main {
         Person p1 = new Person("Jan", "Kowalski", 21);
         Person p2 = new Person("Lukasz", "Kowalski", 21);
 
-
         OutputStream  fileOutputStream = null;
         ObjectOutput objectOutputStream = null;
         OutputStream bufferOut  = null;
@@ -36,8 +35,6 @@ public class Main {
 
         }
 
-        //Thread.sleep(2000);
-
         try {
 
             FileInputStream fileInputStream = new FileInputStream(fileName);
@@ -47,7 +44,6 @@ public class Main {
 
             Person readCase = null;
             List<Person> recordList = new ArrayList<>();
-
 
             while (true) {
                 try {
